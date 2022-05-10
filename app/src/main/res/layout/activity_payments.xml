@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PaymentsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_actionbar4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingClass"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="Payments"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_actionbar4"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_actionbar4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/setuppayment"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_actionbar4" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/setuppayment"
+        app:layout_constraintStart_toStartOf="@+id/setuppayment"
+        app:layout_constraintTop_toTopOf="@+id/setuppayment"
+        android:layout_marginStart="8dp"
+        app:srcCompat="@drawable/attachmoneyicon" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setup payment"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/setuppayment"
+        app:layout_constraintEnd_toEndOf="@+id/setuppayment"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/setuppayment" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/bordercolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setuppayment" />
+
+    <View
+        android:id="@+id/hideview"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+    <ImageView
+        android:id="@+id/hideimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/hideview"
+        app:layout_constraintEnd_toEndOf="@+id/hideview"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="@+id/hideview"
+        app:srcCompat="@drawable/crediticon" />
+
+    <ImageView
+        android:id="@+id/hidecraditcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/hideview"
+        app:layout_constraintStart_toStartOf="@+id/hideview"
+        app:layout_constraintTop_toTopOf="@+id/hideview"
+        android:layout_margin="8dp"
+        app:srcCompat="@drawable/creditcard" />
+
+    <TextView
+        android:id="@+id/hidetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cradit Card"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hideview"
+        app:layout_constraintEnd_toStartOf="@+id/hideimage"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toEndOf="@+id/hidecraditcard"
+        app:layout_constraintTop_toTopOf="@+id/hideview"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More Payment Method Coming Soon"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/methodcolor"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

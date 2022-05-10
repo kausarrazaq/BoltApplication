@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawerlayout"
+    android:layout_height="match_parent"
+    tools:context=".Activities.HomeActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map2"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context="com.example.mapwithmarker.MapsMarkerActivity"
+            tools:layout="@layout/activity_home" />
+
+        <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:background="@drawable/borderforhome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nice to see you back!"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lightbold"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sknder"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bottomsheetborder"
+        android:backgroundTint="@color/homebackground"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <View
+        android:id="@+id/ridemybike"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bottomsheetborder"
+        android:backgroundTint="@color/background"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Nearby scooters"
+        android:textSize="16sp"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ride my bike"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/bold"
+        app:layout_constraintBottom_toBottomOf="@id/ridemybike"
+        app:layout_constraintEnd_toEndOf="@id/ridemybike"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@id/ridemybike" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        app:srcCompat="@drawable/transfer" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/ridemybike"
+        app:layout_constraintStart_toStartOf="@id/ridemybike"
+        app:layout_constraintTop_toTopOf="@id/ridemybike"
+        app:srcCompat="@drawable/scacaner" />
+
+        <ImageView
+            android:id="@+id/sidebaricon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sidebar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/sidebar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        app:menu="@menu/menuforhome"
+        app:headerLayout="@layout/activity_sidebaractivity"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

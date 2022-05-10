@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_home">
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/ic_Home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/ic_Payments"
+        android:icon="@drawable/payments"
+        android:title="Payments"/>
+    <item
+        android:id="@+id/ic_Trips"
+        android:icon="@drawable/tripicon"
+        android:title="Trip"/>
+        <item
+            android:id="@+id/ic_About"
+            android:icon="@drawable/about"
+            android:title="About"/>
+    </group>
+
+</menu>

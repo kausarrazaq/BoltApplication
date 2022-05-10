@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddCardActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_actionbar5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingClass"/>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="Payments"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_actionbar5"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_actionbar5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Card"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_actionbar5" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name on Card"
+        android:textSize="16sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/backgroundborder"
+        android:backgroundTint="@color/destinationcolor"
+        android:ems="10"
+        android:hint="Skndr"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textPersonName"
+        android:paddingStart="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Number"
+        android:textSize="16sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/backgroundborder"
+        android:backgroundTint="@color/destinationcolor"
+        android:ems="10"
+        android:hint="1234 4567 7890 1234"
+        android:inputType="number"
+        android:paddingStart="8dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expiry &amp; CVV"
+        android:textSize="16sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="03/24"
+        android:textColor="@color/black"
+        android:paddingStart="8dp"
+        android:background="@drawable/backgroundborder"
+        android:backgroundTint="@color/destinationcolor"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="***"
+        android:paddingStart="8dp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:layout_marginEnd="20dp"
+        android:inputType="textPassword"
+        android:background="@drawable/backgroundborder"
+        android:backgroundTint="@color/destinationcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <Button
+        android:id="@+id/addbutn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/background"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

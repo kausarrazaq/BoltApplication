@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <View
+        android:id="@+id/view27"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="textview"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/greencolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <View
+        android:id="@+id/view25"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/bordercolor"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finish" />
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/textView58"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="textview"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/view25" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView59"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="TextView"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView58" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView60"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:text="TextView"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/textView59"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView58" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/cancel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="TextView"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:textColor="@color/redcolor"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/view25" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/view26"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="@color/bordercolor"-->
+<!--        android:layout_marginTop="14dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/cancel" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

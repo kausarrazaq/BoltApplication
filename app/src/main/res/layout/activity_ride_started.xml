@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawerlayout"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RideStartedActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_actionbar1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingClass" />
+
+    <fragment
+        android:id="@+id/map2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="com.example.mapwithmarker.MapsMarkerActivity"
+        tools:layout="@layout/activity_ride_started" />
+
+    <ImageView
+        android:id="@+id/sidebaricon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_actionbar1"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_actionbar1"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_actionbar1"
+        app:srcCompat="@drawable/sidebar" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="0dp"
+        android:layout_height="290dp"
+        android:background="@drawable/borderforhome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Payment Method"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@+id/view12" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="St George's Cathedral,Southwark"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moonraker Point, KCL"
+        android:layout_marginStart="16dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Estimated Bill"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 15.00"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/locationicon" />
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/bordercolor"
+        app:layout_constraintStart_toStartOf="@id/view12"
+        app:layout_constraintEnd_toEndOf="@+id/view12"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <Button
+        android:id="@+id/finishride"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Finish Ride"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/background"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/view12"
+        app:layout_constraintEnd_toEndOf="@id/view12"
+        app:layout_constraintStart_toStartOf="@+id/view12" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/sidebar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        app:menu="@menu/menuforhome"
+        app:headerLayout="@layout/activity_sidebaractivity"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
